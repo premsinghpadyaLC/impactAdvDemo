@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact.com User Flow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .step {
+            background-color: #fff;
+            border: 2px solid #333;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .step h3 {
+            font-size: 20px;
+            margin: 0;
+            color: #333;
+        }
+        .step p {
+            font-size: 16px;
+            color: #555;
+        }
+        .step .arrow {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .step .arrow span {
+            display: block;
+            font-size: 40px;
+            color: #333;
+        }
+        .step .arrow-line {
+            height: 30px;
+            width: 2px;
+            background-color: #333;
+            margin: 10px auto;
+        }
+        .step .info {
+            font-size: 14px;
+            font-style: italic;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Publisher's Website -->
+        <div class="step">
+            <h3>Publisher's Website</h3>
+            <p>Example: <strong>www.cooldeals.com</strong></p>
+            <p>User clicks on Advertiser's Ad</p>
+            <div class="arrow">
+                <span>&#8595;</span>
+                <div class="arrow-line"></div>
+            </div>
+            <p class="info">Redirects to Impact.com Tracking Server</p>
+        </div>
+
+        <!-- Impact.com Tracking Server (Processing Click) -->
+        <div class="step">
+            <h3>Impact.com Tracking Server (Processing Click)</h3>
+            <p>Example: <strong>impact.com/tracking</strong></p>
+            <p>Logs click, associates with Publisher, prepares for future purchase tracking.</p>
+            <div class="arrow">
+                <span>&#8595;</span>
+                <div class="arrow-line"></div>
+            </div>
+            <p class="info">Redirects user with tracking info</p>
+        </div>
+
+        <!-- Advertiser's Website -->
+        <div class="step">
+            <h3>Advertiser's Website</h3>
+            <p>Example: <strong>www.greatproducts.com</strong></p>
+            <p>User browses the website, Impact.com JS is loaded.</p>
+            <p>Captures session data, continues tracking.</p>
+            <div class="arrow">
+                <span>&#8595;</span>
+                <div class="arrow-line"></div>
+            </div>
+            <p class="info">Tracks user activity for potential purchase</p>
+        </div>
+
+        <!-- User Makes a Purchase -->
+        <div class="step">
+            <h3>User Makes a Purchase</h3>
+            <p>Example: User buys a Smartphone for $499.99</p>
+            <p>User completes checkout and payment.</p>
+            <div class="arrow">
+                <span>&#8595;</span>
+                <div class="arrow-line"></div>
+            </div>
+            <p class="info">Impact.com JS triggers and sends purchase info</p>
+        </div>
+
+        <!-- Impact.com Tracking Server (Processing Purchase) -->
+        <div class="step">
+            <h3>Impact.com Tracking Server (Processing Purchase)</h3>
+            <p>Example: <strong>impact.com/purchase</strong></p>
+            <p>Logs purchase event, attributes to Publisher's click.</p>
+            <p>Tracks purchase value, links to session data.</p>
+            <div class="arrow">
+                <span>&#8595;</span>
+                <div class="arrow-line"></div>
+            </div>
+            <p class="info">Attribution data recorded</p>
+        </div>
+
+        <!-- Publisher Receives Credit -->
+        <div class="step">
+            <h3>Publisher Receives Credit</h3>
+            <p>Example: <strong>www.cooldeals.com</strong></p>
+            <p>Publisher is credited for the sale, earnings reported.</p>
+            <div class="arrow">
+                <span>&#8595;</span>
+                <div class="arrow-line"></div>
+            </div>
+            <p class="info">Publisher receives earnings for the sale</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
